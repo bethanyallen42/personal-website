@@ -28,7 +28,8 @@ header {
 
 .current-page {
     border: 1px solid black;
-    padding: 5px;
+    background-color: var(--light-primary);
+    padding: 10px;
     border-radius: 25px;
 }
 
