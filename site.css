@@ -137,13 +137,10 @@ a:hover {
 
 footer {
     text-align: center;
-    background-color: var(--light-primary);
+    background-color: var(--mid-background);
     padding: 5px;
     position: fixed;
     bottom: 0;
     width: 100%;
 }
 
-.footer-on-blue {
-    background-color: var(--mid-background);
-}
