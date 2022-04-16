@@ -1,151 +1,153 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Ms+Madi&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&family=Ms+Madi&display=swap");
 
 :root {
-    --background-color: #fffef9;
-    --mid-background: #fff6e9;
-    --darker-background: #ffefd7;
-    --primary-color: #7fc9f6;
-    --light-primary: #e3f0ff;
-    --text-color: black; 
+  --background-color: #fffef9;
+  --mid-background: #fff6e9;
+  --darker-background: #ffefd7;
+  --primary-color: #7fc9f6;
+  --light-primary: #e3f0ff;
+  --text-color: black;
 }
 body {
-    font-family:'Inconsolata', monospace;;
-    background-color: var(--background-color)
-    
+  font-family: "Inconsolata", monospace;
+  background-color: var(--background-color);
 }
 
 header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--darker-background);
-    padding: 10px;
-    color: var(--text-color);
-}
-
-.current-page {
-    border: 1px solid black;
-    background-color: var(--light-primary);
-    padding: 10px;
-    border-radius: 25px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--darker-background);
+  padding: 10px;
+  color: var(--text-color);
 }
 
 main {
-    margin: 0 auto;
-    padding-top: 40px;
-    padding-bottom: 40px;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .medium-font {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .large-font {
-    font-size: 50px;
+  font-size: 50px;
 }
 
 .cursive {
-    font-family: 'Ms Madi', cursive
+  font-family: "Ms Madi", cursive;
 }
 
-a, a:visited {
-    color: var(--text-color);
-    text-decoration: none;
+a,
+a:visited {
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 4px;
 }
 
 a:hover {
-    background-color: var(--light-primary);
-    padding: 10px;
-    border-radius: 25px;
+  background-color: var(--light-primary);
+  padding: 4px;
+  border-radius: 5px;
+  text-decoration: underline;
+}
+
+.current-page {
+  border: 1px solid #000;
+  background-color: var(--light-primary);
+  padding: 4px;
+  border-radius: 5px;
 }
 
 .add-right-margin {
-    margin-right: 40px;
+  margin-right: 40px;
 }
 
 .full-image {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .large-image {
-    max-width: 65%;
+  max-width: 65%;
 }
 
 .medium-image {
-    max-width: 40%;
+  max-width: 40%;
 }
 
 .square-image {
-    width: 100px;
-    height: 100px;
+  width: 100px;
+  height: 100px;
 }
 
 .flex-row {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .flex-row-justify-right {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .flex-column {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .blue-background {
-    background: var(--light-primary);
+  background: var(--light-primary);
 }
 
-.dark-blue-background { 
-    background-color: var(--primary-color);
+.dark-blue-background {
+  background-color: var(--primary-color);
 }
 .add-padding {
-    padding: 50px;
+  padding: 50px;
 }
 
 .add-padding-left {
-    padding: 10%
+  padding: 10%;
 }
 
 .a-little-padding {
-    padding: 30px;
+  padding: 30px;
 }
 
 .top-margin {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 .rotate {
-    transform: rotate(-6deg);
+  transform: rotate(-6deg);
+  z-index: -1;
 }
 
 .center-text {
-    text-align: center;
+  text-align: center;
 }
 
 .icon {
-    width: 20px
+  width: 20px;
 }
 
 footer {
-    text-align: center;
-    background-color: var(--mid-background);
-    padding: 5px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+  text-align: center;
+  background-color: var(--mid-background);
+  padding: 5px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .icon-link:hover {
-    background-color: var(--mid-background);
+  background-color: var(--mid-background);
 }
-
