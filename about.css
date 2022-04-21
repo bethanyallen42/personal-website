@@ -1,27 +1,57 @@
+.layout-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--light-primary);
+}
+
 .rotate {
-    transform: rotate(-6deg);
+  transform: rotate(-6deg);
+  z-index: -1;
 }
 
 .link-on-blue:hover {
-    background-color: var(--darker-background);
-    padding: 0px 15px;
-    margin-top: 10px;
-    border-radius: 25px;
+  background-color: var(--darker-background);
+  padding: 0px 15px;
+  margin-top: 10px;
+  border-radius: 25px;
 }
 
 .link-on-blue {
-    text-decoration: underline;
-    font-family: 'Ms Madi', cursive;
-    font-size: 40px;
+  text-decoration: underline;
+  font-family: "Ms Madi", cursive;
+  font-size: 40px;
 }
 
 .text-card {
-    width: 90%;
-    background-color: var(--background-color);
-    padding: 20px;
-    border: 10px solid var(--primary-color);
-    margin: 10px;
-    display: flex;
-    align-items: center;
+  width: 90%;
+  background-color: var(--background-color);
+  padding: 5vw;
+  border: 10px solid var(--primary-color);
+  margin: 10px;
+  display: flex;
+  align-items: center;
 }
 
+@media (max-width: 640px) {
+  main > div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .layout-1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    text-align: center;
+    padding: 10px;
+    background: var(--light-primary);
+    font-size: 15px;
+  }
+
+  .text-card {
+    width: 75%;
+  }
+}
